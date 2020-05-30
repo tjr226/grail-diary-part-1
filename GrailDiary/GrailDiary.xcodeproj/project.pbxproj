@@ -13,6 +13,7 @@
 		22EF64842482BFA600173CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EF64822482BFA600173CD4 /* Main.storyboard */; };
 		22EF64862482BFA700173CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EF64852482BFA700173CD4 /* Assets.xcassets */; };
 		22EF64892482BFA700173CD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EF64872482BFA700173CD4 /* LaunchScreen.storyboard */; };
+		22EF64912482CC4200173CD4 /* SquareImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EF64902482CC4200173CD4 /* SquareImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		22EF64852482BFA700173CD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22EF64882482BFA700173CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22EF648A2482BFA700173CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EF64902482CC4200173CD4 /* SquareImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SquareImage.png; path = ../../../../../../../../Desktop/SquareImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				22EF64802482BFA600173CD4 /* POIsTableViewController.swift */,
 				22EF64822482BFA600173CD4 /* Main.storyboard */,
 				22EF64852482BFA700173CD4 /* Assets.xcassets */,
+				22EF64902482CC4200173CD4 /* SquareImage.png */,
 				22EF64872482BFA700173CD4 /* LaunchScreen.storyboard */,
 				22EF648A2482BFA700173CD4 /* Info.plist */,
 			);
@@ -128,6 +131,7 @@
 				22EF64892482BFA700173CD4 /* LaunchScreen.storyboard in Resources */,
 				22EF64862482BFA700173CD4 /* Assets.xcassets in Resources */,
 				22EF64842482BFA600173CD4 /* Main.storyboard in Resources */,
+				22EF64912482CC4200173CD4 /* SquareImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
