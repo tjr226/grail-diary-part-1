@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D3A85424869A140069D7BE /* AddPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3A85324869A140069D7BE /* AddPOIViewController.swift */; };
+		22D3A85624869A2D0069D7BE /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3A85524869A2D0069D7BE /* POIDetailViewController.swift */; };
+		22D3A85824869A490069D7BE /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3A85724869A490069D7BE /* POITableViewCell.swift */; };
+		22D3A85A24869A5B0069D7BE /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3A85924869A5B0069D7BE /* POI.swift */; };
+		22D3A86024869C380069D7BE /* POIsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3A85F24869C380069D7BE /* POIsViewController.swift */; };
 		22EF647D2482BFA600173CD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF647C2482BFA600173CD4 /* AppDelegate.swift */; };
 		22EF647F2482BFA600173CD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF647E2482BFA600173CD4 /* SceneDelegate.swift */; };
-		22EF64812482BFA600173CD4 /* POIsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF64802482BFA600173CD4 /* POIsTableViewController.swift */; };
 		22EF64842482BFA600173CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EF64822482BFA600173CD4 /* Main.storyboard */; };
 		22EF64862482BFA700173CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EF64852482BFA700173CD4 /* Assets.xcassets */; };
 		22EF64892482BFA700173CD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EF64872482BFA700173CD4 /* LaunchScreen.storyboard */; };
@@ -17,10 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22D3A85324869A140069D7BE /* AddPOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPOIViewController.swift; sourceTree = "<group>"; };
+		22D3A85524869A2D0069D7BE /* POIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
+		22D3A85724869A490069D7BE /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
+		22D3A85924869A5B0069D7BE /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
+		22D3A85F24869C380069D7BE /* POIsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIsViewController.swift; sourceTree = "<group>"; };
 		22EF64792482BFA600173CD4 /* GrailDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrailDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EF647C2482BFA600173CD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22EF647E2482BFA600173CD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22EF64802482BFA600173CD4 /* POIsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIsTableViewController.swift; sourceTree = "<group>"; };
 		22EF64832482BFA600173CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22EF64852482BFA700173CD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22EF64882482BFA700173CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22D3A85B24869A640069D7BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22D3A85924869A5B0069D7BE /* POI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22D3A85E24869B1C0069D7BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22D3A85324869A140069D7BE /* AddPOIViewController.swift */,
+				22D3A85524869A2D0069D7BE /* POIDetailViewController.swift */,
+				22D3A85F24869C380069D7BE /* POIsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22D3A8612486A2440069D7BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22D3A85724869A490069D7BE /* POITableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		22EF64702482BFA600173CD4 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +94,9 @@
 			children = (
 				22EF647C2482BFA600173CD4 /* AppDelegate.swift */,
 				22EF647E2482BFA600173CD4 /* SceneDelegate.swift */,
-				22EF64802482BFA600173CD4 /* POIsTableViewController.swift */,
+				22D3A8612486A2440069D7BE /* Views */,
+				22D3A85E24869B1C0069D7BE /* ViewControllers */,
+				22D3A85B24869A640069D7BE /* Model */,
 				22EF64822482BFA600173CD4 /* Main.storyboard */,
 				22EF64852482BFA700173CD4 /* Assets.xcassets */,
 				22EF64902482CC4200173CD4 /* SquareImage.png */,
@@ -142,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22EF64812482BFA600173CD4 /* POIsTableViewController.swift in Sources */,
+				22D3A85A24869A5B0069D7BE /* POI.swift in Sources */,
+				22D3A85424869A140069D7BE /* AddPOIViewController.swift in Sources */,
 				22EF647D2482BFA600173CD4 /* AppDelegate.swift in Sources */,
+				22D3A86024869C380069D7BE /* POIsViewController.swift in Sources */,
 				22EF647F2482BFA600173CD4 /* SceneDelegate.swift in Sources */,
+				22D3A85824869A490069D7BE /* POITableViewCell.swift in Sources */,
+				22D3A85624869A2D0069D7BE /* POIDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
