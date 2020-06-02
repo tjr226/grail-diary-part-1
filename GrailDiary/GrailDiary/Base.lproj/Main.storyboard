@@ -59,6 +59,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="countryLabel" destination="9AU-4N-q43" id="ud1-Sn-1kv"/>
+                                            <outlet property="locationLabel" destination="5HT-p2-AUU" id="W83-ty-f5r"/>
+                                            <outlet property="numberOfCluesLabel" destination="f0z-6u-5Co" id="kWb-UM-feK"/>
                                             <segue destination="iyL-y2-Lb8" kind="show" identifier="ShowPOIDetailSegue" id="Tdo-yC-sxn"/>
                                         </connections>
                                     </tableViewCell>
@@ -112,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--AddPOI View Controller-->
         <scene sceneID="8Y6-vx-KWM">
             <objects>
-                <viewController id="dTu-XL-2kJ" sceneMemberID="viewController">
+                <viewController id="dTu-XL-2kJ" customClass="AddPOIViewController" customModule="GrailDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j29-O1-O4I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,6 +136,9 @@
                                         <rect key="frame" x="0.0" y="57" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="locationTextField:" destination="enX-3t-zSf" eventType="editingDidEnd" id="uCd-hh-2Lr"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2BX-It-wBq">
                                         <rect key="frame" x="0.0" y="107" width="374" height="34"/>
@@ -165,9 +171,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghc-om-dHq">
                                 <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem systemItem="cancel" id="Coz-AM-1gd"/>
+                                    <barButtonItem systemItem="cancel" id="Coz-AM-1gd">
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="dTu-XL-2kJ" id="g61-LF-KO9"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="Vsu-mR-igF"/>
-                                    <barButtonItem systemItem="save" id="ZBf-F3-Vx9"/>
+                                    <barButtonItem systemItem="save" id="ZBf-F3-Vx9">
+                                        <connections>
+                                            <action selector="saveTapped:" destination="dTu-XL-2kJ" id="Ff2-SJ-vHz"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -182,8 +196,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8kx-C1-S5E"/>
                     </view>
+                    <connections>
+                        <outlet property="clue1TextField" destination="b5w-mb-6cd" id="Fcp-fG-4oA"/>
+                        <outlet property="clue2TextField" destination="qmK-Z4-u4O" id="WqX-vb-uvZ"/>
+                        <outlet property="clue3TextField" destination="xJJ-cc-LJa" id="kZp-v9-xSv"/>
+                        <outlet property="countryTextField" destination="2BX-It-wBq" id="hcz-sh-iE3"/>
+                        <outlet property="locationTextField" destination="fga-Ml-m4T" id="NpQ-78-Sdd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oqp-6T-x20" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="enX-3t-zSf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1833" y="129"/>
         </scene>

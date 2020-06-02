@@ -14,24 +14,19 @@ class POIsViewController: UIViewController {
     
     var POIs: [POI] = []
     
-    
-// DELETED in guided project implementation
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-//    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "AddPOIModalSegue" {
+            if let addPOIVC = segue.destination as? AddPOIViewController {
+                addPOIVC.delegate = self
+            }
+        }   else if segue.identifier == "ShowPOIDetailSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow,
+                let POIDetailVC = segue.destination as? POIDetailViewController {
+                POIDetailVC.poi = POIs[indexPath.row]
+            }
+        }
     }
-    */
 
 }
 
@@ -44,8 +39,8 @@ extension POIsViewController: UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "POICell", for: indexPath) as? POITableViewCell else { return UITableViewCell() }
         
-        let POI = POIs[indexPath.row]
-        cell.POI = POI
+        let poi = POIs[indexPath.row]
+        cell.poi = poi
         
         return cell
     }
